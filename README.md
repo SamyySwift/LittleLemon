@@ -1,16 +1,17 @@
-# LittleLemon
+## LittleLemon Booking and Menu API
 
-# Home Route
+### API Routes
+Home Route
 - Home page - resturant/menu/home
 
-# Menu API
+Menu API
 - To get all Menu items or create a new menu item - /resturant/menu/menu/
 - To update, delete or patch a single MenuItem - /resturant/menu/menu/pk
 
-# Booking API Route
-resturant/booking/tables
+Booking API Route
+- resturant/booking/tables
 
-# User registraion and authentication 
+User registration and authentication 
 - Register user - auth/users/
 - Get current user - auth/users/me
 - Login - auth/token/login/
