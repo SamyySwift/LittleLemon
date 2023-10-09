@@ -3,14 +3,15 @@ from django.db import models
 
 # Create your models here.
 class Menu(models.Model):
-    ID = models.IntegerField(primary_key=True)
     Title = models.CharField(max_length=255)
     Price = models.DecimalField(max_digits=10, decimal_places=2)
-    Inventory = models.IntegerField()
+    Inventory = models.IntegerField(default=0)
+
+    def get_item(self):
+        return f"{self.Title} : {str(self.Price)}"
 
 
 class Booking(models.Model):
-    ID = models.IntegerField(primary_key=True)
     Name = models.CharField(max_length=255)
-    No_of_guests = models.IntegerField()
+    No_of_guests = models.IntegerField(default=0)
     BookingDate = models.DateField()
