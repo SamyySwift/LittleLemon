@@ -1,28 +1,44 @@
-## LittleLemon Booking and Menu API
+### LittleLemon Booking and Menu API
 
-### ⚙️ Setup Environment
-After cloning the repo, do the following:
-- `cd littlelemon`
-- `pipenv shell`
-- `pipenv install`
+#### ⚙️ Environment Setup
 
-### API Routes
-Use the following API endpoints. PS. Do not correct the resturant typo, use as is.
+After cloning the repository, follow these steps to set up your environment:
+
+1. Change directory to the project folder:
+   ```
+   cd littlelemon
+   ```
+
+2. Activate the virtual environment:
+   ```
+   pipenv shell
+   ```
+
+3. Install the project's dependencies:
+   ```
+   pipenv install
+   ```
+
+#### API Routes
+
+You can access the following API endpoints:
 
 #### Home Route
-- Home page => resturant/menu/home
+
+- Home Page: `/resturant/menu/home`
 
 #### Menu API
-- To get all Menu items or create a new menu item => /resturant/menu/menu/
-- To update, delete or patch a single MenuItem => /resturant/menu/menu/pk
+
+- Get all menu items or create a new menu item: `/resturant/menu/menu/`
+- Update, delete, or patch a single menu item: `/resturant/menu/menu/pk`
 
 #### Booking API Route
-- resturant/booking/tables
 
-#### User registration and authentication 
-- Register user => auth/users/
-- Get current user => auth/users/me
-- Login => auth/token/login/
-- Logout => auth/token/logout/
+- Booking tables: `/resturant/booking/tables`
 
+#### User Registration and Authentication
 
+- Register a user: `/auth/users/`
+- Get the current user: `/auth/users/me`
+- Login: `/auth/token/login/`
+- Logout: `/auth/token/logout/`
